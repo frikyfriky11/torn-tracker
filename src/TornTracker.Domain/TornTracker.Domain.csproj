@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>TornTracker.Domain</RootNamespace>
+    <AssemblyName>TornTracker.Domain</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Authors>frikyfriky11</Authors>
+    <Description>The domain layer containing the domain entities for the TornTracker App</Description>
+    <PackageProjectUrl>https://github.com/frikyfriky11/torntracker</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/frikyfriky11/torntracker</RepositoryUrl>
+    <Version>0.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NodaTime" Version="3.1.9" />
+  </ItemGroup>
+
+</Project>

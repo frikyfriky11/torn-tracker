@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <RootNamespace>TornTracker.Infrastructure</RootNamespace>
+        <AssemblyName>TornTracker.Infrastructure</AssemblyName>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Authors>frikyfriky11</Authors>
+        <Description>The infrastructure layer containing the database context and external services
+            implementations for the TornTracker App</Description>
+        <PackageProjectUrl>https://github.com/frikyfriky11/torntracker</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/frikyfriky11/torntracker</RepositoryUrl>
+        <Version>1.0.0</Version>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="EntityFrameworkCore.Exceptions.SqlServer" Version="6.0.3.2" />
+        <PackageReference Include="InfluxDB.Client" Version="4.13.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"
+            Version="8.0.0-preview.2.23153.2" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer"
+            Version="8.0.0-preview.2.23128.3" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="7.0.4" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL.NodaTime" Version="7.0.4" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\TornTracker.Application\TornTracker.Application.csproj" />
+    </ItemGroup>
+
+
+</Project>

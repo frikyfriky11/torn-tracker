@@ -1,0 +1,14 @@
+﻿global using AutoMapper;
+global using FluentValidation.Results;
+global using FluentValidation;
+global using JetBrains.Annotations;
+global using MediatR;
+global using Microsoft.Extensions.DependencyInjection;
+global using Serilog;
+global using System.Diagnostics;
+global using System.Reflection;
+global using System.Text.Json.Serialization;
+global using TornTracker.Application.Common.Behaviours;
+global using TornTracker.Application.Common.Interfaces;
+global using TornTracker.Application.Common.TornApi;
+global using TornTracker.Domain.Entities;

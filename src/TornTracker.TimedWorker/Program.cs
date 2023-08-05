@@ -30,6 +30,12 @@ public static class Program
   private static IHostBuilder CreateHostBuilder(string[] args)
   {
     return Host.CreateDefaultBuilder(args)
+      .ConfigureAppConfiguration(builder =>
+      {
+        builder.AddJsonFile("influxdb.json", optional: true);
+        builder.AddJsonFile("torn-api-keys.json", optional: true);
+        builder.AddJsonFile("torn-factions.json", optional: true);
+      })
       .ConfigureServices((context, services) =>
       {
         services.AddHostedService<Worker>();

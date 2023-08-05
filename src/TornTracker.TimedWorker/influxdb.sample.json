@@ -1,0 +1,8 @@
+{
+  "InfluxDb": {
+    "Url": "https://your.influxdb.instance",
+    "Token": "your_influxdb_token",
+    "OrganizationId": "your_organization_id",
+    "Bucket": "your_bucket_name"
+  }
+}

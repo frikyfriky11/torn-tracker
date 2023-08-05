@@ -1,0 +1,15 @@
+﻿services:
+  timedworker:
+    image: "${DOCKER_REGISTRY_URL}/torntracker/timedworker:latest-develop"
+    restart: unless-stopped
+    volumes:
+      - "./influxdb.json:/app/influxdb.json"
+      - "./torn-api-keys.json:/app/torn-api-keys.json"
+      - "./torn-factions.json:/app/torn-factions.json"
+    networks:
+      - "influxdb"
+
+networks:
+  influxdb:
+    name: "influxdb_data"
+    external: true
